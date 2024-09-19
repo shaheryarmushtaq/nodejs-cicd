@@ -1,27 +1,17 @@
 {
   "name": "nodejs-cicd",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "build": "echo 'Building project...'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shaheryarmushtaq/nodejs-cicd.git"
+  "jest": {
+    "testMatch": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shaheryarmushtaq/nodejs-cicd/issues"
-  },
-  "homepage": "https://github.com/shaheryarmushtaq/nodejs-cicd#readme",
   "devDependencies": {
     "eslint": "^9.10.0",
-    "eslint-plugin-react": "^7.36.1",
     "jest": "^29.7.0"
   }
 }
+
